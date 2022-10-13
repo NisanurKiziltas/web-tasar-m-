@@ -1,79 +1,66 @@
-*{
-    padding: 0;
+body{
     margin: 0;
-    font-family: sans-serif;
-}
-.banner{
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img_1.jpg);
-    background-position: center;
+    padding: 0;
+    background: url(doga.jpg);
     background-size: cover;
 }
-
-.navbar{
-    display: flex;
-    width: 90%;
+.box{
+    width: 450px;
+    background: #6b5858;
+    padding: 40px;
+    text-align: center;
     margin: auto;
-    padding: 32px 0;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo{
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-.navbar ul li{
-    list-style-type: none;
-    display: inline-block;
-    margin:0 25px;
-}
-
-.navbar ul li a{
-    text-decoration: none;
+    margin-top: 5%;
     color: #fff;
+    font-family: sans-serif;
 
 }
 
-.navbar ul li a:hover{
-    box-shadow: 0px 2px red;
-    transition: 0.25s;
-}
-
-.content{
-    width: 100%;
-    position: absolute;
-    top: 40%;
-    color: #fff;
-    text-align: center;
-}
-
-.content h1{
-    font-size: 65px;
-}
-
-.content p{
-    margin: 20px auto;
-}
-
-button{
+.box img{
+    border-radius: 50% ;
     width: 200px;
-    padding: 15px 0;
-    border-radius: 35px;
-    margin: 20px;
-    text-align: center;
+    height: 200px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.box img:hover{
+    transform:scale(0.9) ;
+}
+
+.box h1{
+    font-size: 4 0px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+.box h5{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.box p{
+    text-align: justify;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.box li{
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+}
+
+.box li a{
     color:white;
-    cursor:pointer;
-    font-weight: 600;
-    background-color: #6166B3;
-    font-size: 17px;
+    font-size:60px;
+    transition: all ease-in-out 250ms;
 
 }
 
-button:hover{
-    color: black;
-    transition: 1s;
-
+.box li a:hover{
+ color: #b9b9b0;
 }
