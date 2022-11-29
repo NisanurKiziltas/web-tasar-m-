@@ -1,75 +1,82 @@
-body{
-    margin:0;
+*{
     padding: 0;
-    background:url(food.jpg) ;
-    -webkit-background-size: cover;
-              -moz-background-size: cover;
-              -o-background-size: cover;
-              background-size: cover;
-    
+    margin: 0;
+    font-family: sans-serif;
 }
-
-.signup-form{
-    width: 300px;
-    padding:20px;
-    text-align: center;
-    background: #131034;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    overflow:hidden;
-}
-
-.signup-form h1{
-    margin-top:100px;
-    color: #fff;
-    font-size:40px;
-}
-.signup-form input{
-    display: block;
+.banner{
+    height: 100vh;
     width: 100%;
-    padding: 0 16px;
-    height: 44px;
-    text-align: center;
-    box-sizing:border-box;
-    border:none;
-
+    
+    background-position: center;
+    background-size: cover;
 }
 
-.txt{
-    margin: 20px 0;
-    border-radius: 6px;
+.navbar{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 32px 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(35, 175, 145);
 }
 
-.signup-btn{
-    margin-top: 60px;
-    margin-bottom: 20px;
-    background: #538fef;
-    color: #fff;
-    border-radius: 44px;
-    cursor:pointer;
-    transition: 0.8s;
-    display: block;
-
+.logo{
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
-.signup-btn:hover{
-    transform: scale(0.96);
-    background: #fff;
-    color:rgb(224, 138, 210);
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin:0 25px;
 }
 
-.signup-form a{
+.navbar ul li a{
     text-decoration: none;
-    color:rgb(224, 138, 210);
-    font-size: 14px;
-    padding: 10px;
-    transition: 0.8s;
-    display: block;
+    color: white;
 
 }
 
-.signup-form a:hover{
-    color:rgb(134, 73, 124);
+.navbar ul li a:hover{
+    box-shadow: 0px 2px red;
+    transition: 0.25s;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    text-align: center;
+}
+
+.content h1{
+    font-size: 65px;
+}
+
+.content p{
+    margin: 20px auto;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    border-radius: 35px;
+    margin: 20px;
+    text-align: center;
+    color:white;
+    cursor:pointer;
+    font-weight: 600;
+    background-color: #6166B3;
+    font-size: 17px;
+
+}
+
+button:hover{
+    color: black;
+    transition: 1s;
+
 }
